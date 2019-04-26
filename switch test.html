@@ -6,12 +6,17 @@
 </head>
 <body>
 <script>
-    var standard=60;
     var score=prompt("please enter your score:");
-    if(score>60)
-        alert("pass");
-    else
-        alert("not pass");
+    switch (parseInt(score/10)) {
+        case 10:
+        case 9: 
+        case 8:
+        case 7:
+        case 6:
+            alert("pass");
+            break;
+        default:alert("no pass");
+    }
 </script>
 </body>
 </html>
